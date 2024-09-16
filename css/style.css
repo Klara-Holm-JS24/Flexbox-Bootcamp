@@ -1,0 +1,176 @@
+html, body {
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: rgb(199, 182, 161);
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    h1 {
+        font-size: 3rem;
+        color: rgb(72, 61, 47);
+    } 
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: rgb(197, 207, 231);
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem rgba(83, 108, 183, 0.797);
+    color: rgb(43, 43, 98);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        align-self: flex-start;
+        margin-bottom: 2rem;
+    }  
+    > div {
+        box-shadow: 0.3rem 0.3rem 0.1rem rgba(77, 71, 71, 0.324);
+    }
+}
+
+
+.flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11rem;
+    width: 18rem;
+    background-color: white;
+    span {
+        background-color: #bc1817;
+        border-radius: 100%;
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+}
+
+.menu-easy {
+    background-color: #eeeeee;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    a {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: rgb(85, 84, 84);
+    }
+    a:hover {
+        background-color: rgb(85, 84, 84);
+        color: #eeeeee;
+    }
+}
+
+.menu-medium {
+    background-color: #eeeeee;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    img {
+        height: 1rem;
+        margin: auto auto auto 1rem;
+    }
+    a {
+        color: rgb(85, 84, 84);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+    a:hover {
+        color: #eeeeee;
+        background-color: rgb(85, 84, 84);
+    }
+}
+
+.menu-hard {
+    background-color: #eeeeee;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+        margin: auto auto auto 1rem;
+        justify-self: flex-start;
+        height: 1rem;
+    }
+    a {
+        color: rgb(85, 84, 84);
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #eeeeee;
+        background-color: rgb(85, 84, 84);
+    }
+    button {
+        margin: auto 1rem auto auto;
+        height: 2rem;
+    }
+}
+
+.fibonacci {
+    margin: 1rem 0;
+    height: 4rem;
+    width: 100%;
+    background-color: #ff0000;
+    display: flex;
+    span:first-child {
+        flex: 1;
+        background-color: rgba(0, 70, 221, 0.1);
+    }
+    span:nth-child(2) {
+        flex: 1;
+        background-color: rgba(0, 70, 221, 0.2);
+    }
+    span:nth-child(3) {
+        flex: 2;
+        background-color: rgba(0, 70, 221, 0.3);
+    }
+    span:nth-child(4) {
+        flex: 3;
+        background-color: rgba(0, 70, 221, 0.4);
+    }
+    span:nth-child(5) {
+        flex: 5;
+        background-color: rgba(0, 70, 221, 0.5);
+    }
+    span:nth-child(6) {
+        flex: 8;
+        background-color: rgba(0, 70, 221, 0.6);
+    }
+    span:nth-child(7) {
+        flex: 13;
+        background-color: rgba(0, 70, 221, 0.7);
+    }
+    span:nth-child(8) {
+        flex: 21;
+        background-color: rgba(0, 70, 221, 0.8);
+    }
+    span:nth-child(9) {
+        flex: 34;
+        background-color: rgba(0, 70, 221, 0.9);
+    }
+    span:nth-child(10) {
+        flex: 55;
+        background-color: rgba(0, 70, 221, 1);
+    }
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+
