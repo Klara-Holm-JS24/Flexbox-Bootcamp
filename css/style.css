@@ -44,7 +44,7 @@ section {
     height: 11rem;
     width: 18rem;
     background-color: white;
-    span {
+    .circle {
         background-color: #bc1817;
         border-radius: 100%;
         height: 4.5rem;
@@ -129,48 +129,82 @@ section {
     width: 100%;
     background-color: #ff0000;
     display: flex;
-    span:first-child {
+
+    p {
+        margin: 0;
+        color: #eeeeee;
+    }
+
+    p:first-child {
         flex: 1;
         background-color: rgba(0, 70, 221, 0.1);
     }
-    span:nth-child(2) {
+    p:nth-child(2) {
         flex: 1;
         background-color: rgba(0, 70, 221, 0.2);
     }
-    span:nth-child(3) {
+    p:nth-child(3) {
         flex: 2;
         background-color: rgba(0, 70, 221, 0.3);
     }
-    span:nth-child(4) {
+    p:nth-child(4) {
         flex: 3;
         background-color: rgba(0, 70, 221, 0.4);
     }
-    span:nth-child(5) {
+    p:nth-child(5) {
         flex: 5;
         background-color: rgba(0, 70, 221, 0.5);
     }
-    span:nth-child(6) {
+    p:nth-child(6) {
         flex: 8;
         background-color: rgba(0, 70, 221, 0.6);
     }
-    span:nth-child(7) {
+    p:nth-child(7) {
         flex: 13;
         background-color: rgba(0, 70, 221, 0.7);
     }
-    span:nth-child(8) {
+    p:nth-child(8) {
         flex: 21;
         background-color: rgba(0, 70, 221, 0.8);
     }
-    span:nth-child(9) {
+    p:nth-child(9) {
         flex: 34;
         background-color: rgba(0, 70, 221, 0.9);
     }
-    span:nth-child(10) {
+    p:nth-child(10) {
         flex: 55;
         background-color: rgba(0, 70, 221, 1);
     }
 }
 .reverse {
     flex-direction: row-reverse;
+}
+
+.card {
+    height: 20rem;
+    width: 12rem;
+    border-radius: 1rem;
+    background-color: #eeeeee;
+    color: black;
+    padding: 1rem;
+    font-size: 2rem;
+
+    p {
+        margin: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    span:nth-child(3) {
+        font-size: 8rem;
+        margin: auto;
+    }
+
+    p:last-child, span:nth-last-child(2) {
+        rotate: 180deg;
+        /*Detta gjorde tydligen att align-self 
+        inte behövdes? Inte helt 100 på varför*/
+    }
 }
 
